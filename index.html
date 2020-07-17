@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e606dd1082.js" crossorigin="anonymous"></script>
+    <title>Slack UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <div class="top-nav-left">
+                <a class="button-link" href="javascript:void(0);">
+                    <i class="far fa-clock"></i>
+                </a>
+            </div>
+            <div class="top-nav-center">
+                <input placeholder="Search Team" class="search-input" type="text">
+                <a class="button-link search-link" href="javascript:void(0);">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="top-nav-right">
+                <a class="button-link" href="javascript:void(0);">
+                    <i class="far fa-question-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="main-area">
+            <div class="sidebar">
+                <div class="sidebar-info">
+                    <div class="sidebar-header-info">
+                        <div class="sidebar-header-team-info">
+                            <a class="button-link" href="javascript:void(0);">
+                                <span class="team-name-text">Team</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-header-user-info">
+                            <a class="button-link" href="javascript:void(0);">
+                                <i class="fas fa-circle"></i>
+                                <span class="user-name-text">Yauheni Khotsin</span>
+                            </a>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="new-message-image">
+                        <a class="button-link" href="javascript:void(0);">
+                            <i class="far fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="far fa-comment-dots"></i>
+                                    <span>Threads</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-at"></i>
+                                    <span>Mentions & reactions</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="far fa-address-book"></i>
+                                    <span>People</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-bars"></i>
+                                    <span>Apps</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="far fa-folder-open"></i>
+                                    <span>Files</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>Show less</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-channels">
+                    <ul>
+                        <li>
+                            <div class="drop-down-menu">
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-caret-down"></i>
+                                    <span>Channels</span>
+                                </a>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-plus first-plus-icon"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span># general</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span># questions</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span># random</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span><i class="fas fa-lock"></i> Task</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span>+ Add a channel</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-direct-messages">
+                    <ul>
+                        <li>
+                            <div class="drop-down-menu">
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-caret-right"></i>
+                                    <span>Direct messages</span>
+                                </a>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <i class="fas fa-plus second-plus-icon"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="button-link" href="javascript:void(0);">
+                                    <span>+ Invite people</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-info">
+                    <div class="chat-info-header">
+                        <div class="chat-info-header-title">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span>#general</span>
+                            </a>
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <i class="far fa-star"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="chat-info-header-data">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <i class="far fa-user"></i>
+                                <span>523</span> 
+                            </a>
+                            <span> | Team announcements</span>
+                        </div>
+                    </div>
+
+                    <div class="more-details-icon">
+                        <a class="chat-button-link" href="javascript:void(0);">
+                            <i class="fab fa-creative-commons-by"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat-header">
+                    <div class="chat-header-content">
+                        <h1>#general</h1>
+                        <span>
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="channel-creator">@member</span>
+                            </a>
+                            created this channel on January 21st.
+                            Description: Missed living excuse as be.
+                            Do am he horrible distance marriage so although.
+                            Afraid assure square so happen mr an before.
+                            His many same been well can high that.
+                        </span>
+                        <div class="add-people">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <i class="fas fa-user-plus"></i>Add people
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="chat-messages">
+                    <div class="date-button">
+                        <a class="chat-button-link" href="javascript:void(0);">
+                            Tuesday, January 21st&nbsp;
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="message">
+                        <div class="message-left-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <img src="./images/elephant.jpg">
+                            </a>
+                        </div>
+
+                        <div class="message-right-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-sender">elephant&nbsp;</span>
+                            </a>
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-time">2:22 PM</span>
+                            </a>
+                            <p>
+                                Abilities or he perfectly pretended so strangers be exquisite.
+                                Oh to another chamber pleased imagine do in.
+                                Went me rank at last loud shot an draw. Excellent so
+                                to no sincerity smallness. Removal request
+                                delight if on he we. Unaffected in we by apartments astonished
+                                to decisively themselves. Offended ten old consider speaking. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="message-left-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <img src="./images/flower.jpg">
+                            </a>
+                        </div>
+
+                        <div class="message-right-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-sender">flower&nbsp;</span>
+                            </a>
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-time">2:25 PM</span>
+                            </a>
+                            <p>
+                                In to am attended desirous raptures declared diverted confined at.
+                                Collected instantly remaining up certainly to necessary as. Over walk
+                                dull into son boy door went new. At or happiness commanded daughters as.
+                                Is handsome an declared at received in extended vicinity subjects. Into
+                                miss on he over been late pain an. Only week bore boy what fat case left
+                                use. Match round scale now sex style far times. Your me past an much. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="message-left-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <img src="./images/elephant.jpg">
+                            </a>
+                        </div>
+
+                        <div class="message-right-part">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-sender">elephant&nbsp;</span>
+                            </a>
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <span class="message-time">3:22 PM</span>
+                            </a>
+                            <p>
+                                Ye to misery wisdom plenty polite to as. Prepared interest proposal
+                                it he exercise. My wishing an in attempt ferrars. Visited eat you why
+                                service looking engaged. At place no walls hopes rooms fully in. Roof
+                                hope shy tore leaf joy paid boy. Noisier out brought entered detract
+                                because sitting sir. Fat put occasion rendered off humanity has.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-footer">
+                    <div class="chat-footer-content">
+                        <div class="lightning">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <i class="fas fa-bolt"></i>
+                            </a>
+                        </div>
+                        <div class="read-only">
+                            Read only
+                        </div>
+                        <div class="question">
+                            <a class="chat-button-link" href="javascript:void(0);">
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
