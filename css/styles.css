@@ -324,6 +324,79 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.link-message {
+  color: #1264a3;
+}
+
+.link-message:hover,
+.source-name:hover {
+  text-decoration: underline;
+}
+
+.link-message-body {
+  padding: 0 12px;
+  border-left: 4px solid #dddddd;
+  margin-top: 4px;
+  max-width: 570px;
+}
+
+.link-message-body img {
+  height: 16px;
+  width: 16px;
+  margin-bottom: -3px;
+  margin-right: 6px;
+}
+
+.link-url {
+  font-weight: 900;
+}
+
+.source-name {
+  color: #1264a3;
+  font-weight: 700;
+}
+
+.file-extension {
+  color: #858383;
+  font-size: 13px;
+}
+
+.file-extension i {
+  margin-left: 8px;
+}
+
+.attached-file-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-top: 4px;
+  max-width: 425px;
+}
+
+.file-header {
+  display: flex;
+}
+
+.file-header i {
+  color: #42a5f0;
+  font-size: 36px;
+  margin-right: 16px;
+}
+
+.file-description p {
+  margin: 0;
+}
+
+.file-name {
+  font-weight: 700;
+}
+
+.file-container {
+  margin-top: 12px;
+}
+
 .chat-footer {
   flex: 0 1 auto;
   padding: 30px 25px;
@@ -337,4 +410,9 @@ body {
 
 .chat-footer-content i {
   font-size: 16px;
+}
+
+video {
+  height: 320px;
+  background: #000000;
 }
