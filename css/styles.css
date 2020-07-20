@@ -324,6 +324,13 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.quoted-text-body,
+.link-message-body {
+  padding-left: 12px;
+  border-left: 4px solid #dddddd;
+  margin-top: 4px;
+}
+
 .link-message {
   color: #1264a3;
 }
@@ -334,9 +341,6 @@ body {
 }
 
 .link-message-body {
-  padding: 0 12px;
-  border-left: 4px solid #dddddd;
-  margin-top: 4px;
   max-width: 570px;
 }
 
