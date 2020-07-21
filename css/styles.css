@@ -71,7 +71,8 @@ body {
   display: flex;
   flex-flow: row;
   width: 100%;
-  flex-grow: 1;
+  height: calc(100% - 38px);
+  flex: 1 0 auto;
 }
 
 .sidebar {
@@ -214,6 +215,66 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.chat-scrollable {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  
+}
+
+.sidebar-scrollable {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.chat-scrollable,
+.sidebar-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #adadad transparent;
+}
+
+.chat-scrollable {
+  scrollbar-color: #adadad #ffffff;
+}
+
+.sidebar-scrollable {
+  scrollbar-color: #adadad #431e44;
+}
+
+.chat-scrollable::-webkit-scrollbar,
+.sidebar-scrollable::-webkit-scrollbar {
+  width: 11px;
+}
+
+.chat-scrollable::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.sidebar-scrollable::-webkit-scrollbar-track {
+  background: #431e44;
+}
+
+.chat-scrollable::-webkit-scrollbar-thumb,
+.sidebar-scrollable::-webkit-scrollbar-thumb {
+  background-color: #adadad;
+  border-radius: 6px;
+  border: 2px solid #431e44;
+}
+
+.chat-scrollable::-webkit-scrollbar-thumb {
+  border: 2px solid #ffffff;
+}
+
+.sidebar-scrollable::-webkit-scrollbar-thumb {
+  border: 2px solid #431e44;
+}
+
 .chat-info-header {
   display: flex;
   flex-direction: column;
@@ -278,7 +339,7 @@ body {
 
 .chat-messages {
   flex: 1 1 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  
 }
 
 .date-button {
