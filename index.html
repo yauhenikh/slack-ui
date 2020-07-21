@@ -12,9 +12,12 @@
     <div class="container">
         <div class="top-nav">
             <div class="top-nav-left">
-                <a class="button-link" href="javascript:void(0);">
-                    <i class="far fa-clock"></i>
-                </a>
+                <div class="icon-div tooltip">
+                    <span class="tooltiptext tooltiptext-clock">History</span>
+                    <a class="button-link" href="javascript:void(0);">
+                        <i class="far fa-clock"></i>
+                    </a>
+                </div>
             </div>
             <div class="top-nav-center">
                 <input placeholder="Search Team" class="search-input" type="text">
@@ -23,9 +26,12 @@
                 </a>
             </div>
             <div class="top-nav-right">
-                <a class="button-link" href="javascript:void(0);">
-                    <i class="far fa-question-circle"></i>
-                </a>
+                <div class="icon-div tooltip">
+                    <span class="tooltiptext tooltiptext-upper-question">Help</span>
+                    <a class="button-link" href="javascript:void(0);">
+                        <i class="far fa-question-circle"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -49,7 +55,8 @@
                         </a>
                     </div>
 
-                    <div class="new-message-image">
+                    <div class="new-message-image tooltip">
+                        <span class="tooltiptext">New message</span>
                         <a class="button-link" href="javascript:void(0);">
                             <i class="far fa-edit"></i>
                         </a>
@@ -109,7 +116,7 @@
                             </li>
                         </ul>
                     </div>
-                
+
                     <div class="sidebar-channels">
                         <ul>
                             <li>
@@ -118,9 +125,12 @@
                                         <i class="fas fa-caret-down"></i>
                                         <span>Channels</span>
                                     </a>
-                                    <a class="button-link" href="javascript:void(0);">
-                                        <i class="fas fa-plus first-plus-icon"></i>
-                                    </a>
+                                    <div class="icon-div tooltip">
+                                        <span class="tooltiptext tooltiptext-first-plus">Add channels</span>
+                                        <a class="button-link" href="javascript:void(0);">    
+                                            <i class="fas fa-plus first-plus-icon"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -160,7 +170,7 @@
                             </li>
                         </ul>
                     </div>
-                
+
                     <div class="sidebar-direct-messages">
                         <ul>
                             <li>
@@ -169,9 +179,12 @@
                                         <i class="fas fa-caret-right"></i>
                                         <span>Direct messages</span>
                                     </a>
-                                    <a class="button-link" href="javascript:void(0);">
-                                        <i class="fas fa-plus second-plus-icon"></i>
-                                    </a>
+                                    <div class="icon-div tooltip">
+                                        <span class="tooltiptext tooltiptext-second-plus">Open a direct message</span>
+                                        <a class="button-link" href="javascript:void(0);">
+                                            <i class="fas fa-plus second-plus-icon"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -193,21 +206,28 @@
                             <a class="chat-button-link" href="javascript:void(0);">
                                 <span>#general</span>
                             </a>
-                            <a class="chat-button-link" href="javascript:void(0);">
-                                <i class="far fa-star"></i>
-                            </a>
+                            <div class="icon-div tooltip">
+                                <span class="tooltiptext">Star channel</span>
+                                <a class="chat-button-link" href="javascript:void(0);">
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </div>
                         </div>
                         
                         <div class="chat-info-header-data">
-                            <a class="chat-button-link" href="javascript:void(0);">
-                                <i class="far fa-user"></i>
-                                <span>523</span> 
-                            </a>
+                            <div class="icon-div tooltip">
+                                <span class="tooltiptext">View member list</span>
+                                <a class="chat-button-link" href="javascript:void(0);">
+                                    <i class="far fa-user"></i>
+                                    <span>523</span> 
+                                </a>
+                            </div>
                             <span> | Team announcements</span>
                         </div>
                     </div>
 
-                    <div class="more-details-icon">
+                    <div class="more-details-icon tooltip">
+                        <span class="tooltiptext tooltiptext-details">Show channel details</span>
                         <a class="chat-button-link" href="javascript:void(0);">
                             <i class="fab fa-creative-commons-by"></i>
                         </a>
@@ -415,7 +435,8 @@
 
             <div class="chat-footer">
                 <div class="chat-footer-content">
-                    <div class="lightning">
+                    <div class="lightning tooltip">
+                        <span class="tooltiptext">Shortcuts</span>
                         <a class="chat-button-link" href="javascript:void(0);">
                             <i class="fas fa-bolt"></i>
                         </a>
@@ -423,7 +444,8 @@
                     <div class="read-only">
                         Read only
                     </div>
-                    <div class="question">
+                    <div class="question tooltip tooltip-lower-question">
+                        <span class="tooltiptext tooltiptext-lower-question">Posting to this channel has been restricted to select members</span>
                         <a class="chat-button-link" href="javascript:void(0);">
                             <i class="far fa-question-circle"></i>
                         </a>

@@ -101,6 +101,7 @@ body {
   align-items: center;
   padding: 16px 18px 14px 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-header-info {
@@ -140,8 +141,7 @@ body {
 .sidebar-menu {
   background-color: #431e44;
   color: #ffffff;
-  display: flex;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;  
 }
 
 .sidebar-menu ul {
@@ -480,4 +480,115 @@ body {
 video {
   height: 320px;
   background: #000000;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-div {
+  display: inline;
+}
+
+.tooltip .tooltiptext-first-plus {
+  margin-left: -77px;
+  bottom: -5%;
+}
+
+.tooltip .tooltiptext-first-plus::after,
+.tooltip .tooltiptext-second-plus::after {
+  left: 100%;
+  margin-left: -1px;
+  border-color: transparent transparent transparent #000;
+}
+
+.tooltip .tooltiptext-first-plus::after {
+  top: 30%;
+}
+
+.tooltip .tooltiptext-second-plus {
+  margin-left: -98px;
+  bottom: -35%;
+}
+
+.tooltip .tooltiptext-second-plus::after {
+  top: 40%;
+}
+
+.tooltip .tooltiptext-clock {
+  margin-left: -100px;
+  bottom: -130%;
+}
+
+.tooltip .tooltiptext-clock::after {
+  top: -38%;
+  left: 82%;
+  border-color: transparent transparent #000 transparent;
+}
+
+.tooltip .tooltiptext-upper-question {
+  margin-left: -105px;
+  bottom: -130%;
+}
+
+.tooltip .tooltiptext-upper-question::after {
+  top: -38%;
+  left: 86%;
+  border-color: transparent transparent #000 transparent;
+}
+
+.tooltip .tooltiptext-details {
+  margin-left: -105px;
+}
+
+.tooltip .tooltiptext-details::after {
+  left: 86%;
+}
+
+.tooltip-lower-question .tooltiptext-lower-question {
+  width: 150px;
+  margin-left: -130px;
+}
+
+.tooltip-lower-question .tooltiptext-lower-question::after {
+  left: 86%;
 }
